@@ -48,6 +48,10 @@ public class CountMinSketch implements IFrequency, Serializable {
     CountMinSketch() {
     }
 
+    public long [][] getTableDump() {
+        return table;
+    }
+
     public CountMinSketch(int depth, int width, int seed) {
         this.depth = depth;
         this.width = width;
